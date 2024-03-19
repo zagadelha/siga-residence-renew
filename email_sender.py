@@ -2,23 +2,21 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-def send2():
-    print('Sending email...')
 
 # Send email using Gmail
 def send(district, locality, place):
 
     # Gmail account credentials
-    sender_email = 'zagadelha@gmail.com'
-    sender_password = 'wezc urmu rcih gefd'
+    sender_email = 'mail@domain.com'
+    sender_password = 'password'
 
     # Recipient email address
-    recipient_email = 'zagadelha@gmail.com'
+    recipient_email = 'mail@domain.com'
 
     # Create a multipart message
     message = MIMEMultipart()
-    message['From'] = 'zagadelha@gmail.com'
-    message['To'] = 'zagadelha@gmail.com'
+    message['From'] = 'mail@domain.com'
+    message['To'] = 'mail@domain.com'
     message['Subject'] = 'SEF Date/Time available!'
 
     # Add body to the email
